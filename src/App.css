@@ -41,6 +41,13 @@ img {
   height: auto;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
 .App {
   font-family: sans-serif;
   background-color: #0079bf;

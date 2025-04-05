@@ -17,7 +17,7 @@ export default function TaskList({
 	};
 
 	return (
-		<div className="tasklist">
+		<div className={`tasklist ${taskState.toLowerCase()}`}>
 			<div className="title">{title}</div>
 			<div className="content">
 				{tasks.map((task) => {

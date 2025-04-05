@@ -1,7 +1,18 @@
 .tasklist {
   padding: 8px;
-  background-color: #5797b9;
   border-radius: 2px;
+}
+
+.tasklist.pendente {
+  background-color: #e57373; /* vermelho claro */
+}
+
+.tasklist.fazendo {
+  background-color: #64b5f6; /* azul claro */
+}
+
+.tasklist.completa {
+  background-color: #81c784; /* verde claro */
 }
 
 .tasklist .title {
@@ -39,9 +50,28 @@
   gap: 5px;
 }
 
-.tasklist .btn:hover {
-  background-color: #0091a8;
-  cursor: pointer;
+.tasklist.pendente .btn {
+  background-color: #d32f2f;
+}
+
+.tasklist.pendente .btn:hover {
+  background-color: #b71c1c;
+}
+
+.tasklist.fazendo .btn {
+  background-color: #1976d2;
+}
+
+.tasklist.fazendo .btn:hover {
+  background-color: #0d47a1;
+}
+
+.tasklist.completa .btn {
+  background-color: #388e3c;
+}
+
+.tasklist.completa .btn:hover {
+  background-color: #1b5e20;
 }
 
 .tasklist .btn img {
@@ -49,3 +79,4 @@
   height: 15px;
   margin-right: 4px;
 }
+
